@@ -1,0 +1,23 @@
+.bar{
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: green;
+}
+
+.axis text {
+  font: 10px sans-serif;
+}
+
+
+.axis-x path {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.tooltip {
+  position: absolute;
+  color: black;
+}
