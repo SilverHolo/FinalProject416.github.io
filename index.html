@@ -41,20 +41,19 @@
     <!-- Begin slides. Just make elements with a class of slide. -->
 
     <section class="slide">
-      <h2>United States Terrorist Attacks from 1970 - 2016</h2>
-      <h3>By: Christian Tucker</h3>
+      <h2>What were the impacts of covid on companies?</h2>
+      <h3>By: David Nieves</h3>
       <p>
-        What kinds of attacks have the United States experienced over the last 45 years? Which state is the most prone to be targeted? New York, Montana, Florida! Your guess is as good as mine. As the United States has grown to become the one of the most dominant superpowers in
-        the world and as the leadership of the country has changed numerous times we have experienced terrible times in America from the attacks on our nation. With the help of <a href="http://www.start.umd.edu/">National Consortium for the Study of Terrorism and Responses to Terrorism (START)</a>        and <a href="https://www.kaggle.com/START-UMD/gtd">Kaggle</a> where I recieved the data from. I was able to help visualize some of the data to answer these questions.
+        Covid impacted a lot of the world but what was most interesting about it was to see how it impacted the economy having a global pandemic is a very interesting use case where it was a global effect. So seeing how it impacted the stock market and companies can lead to future prediction. We can ask which companies were impacted the most? Which companies actually performed better after Covid? Which companies struggled or maintained the same? <a href="https://www.kaggle.com/datasets/mayankanand2701/nvidia-stock-price-dataset"> We can use the stock market to make these predictions such as Nvidia, Google, and Netflix some of the biggest companies in the world</a> and <a href="https://www.kaggle.com/datasets/varpit94/google-stock-data">Kaggle</a> where I found the data for all the companies through Covid up till now.
       </p>
 
-      <h6>Please use with the Chrome Browser. Hasn't been tested with other web browsers.</h6>
+      <h6>Impacts of Covid on companies</h6>
     </section>
 
     <section class="slide">
-      <h2>Hybrid Structure</h2>
+      <h2>Narrative Visualization Structure</h2>
       <p>
-        This presentation utilizes the interactive slideshow hybrid structure which allows the user to follow a story that I have created and dive into details at their leisure.
+        This presentation uses the interactive slideshow to display the overall impacts of covid on the world from different angles
       </p>
       <h2>Scenes</h2>
       <p>
@@ -175,7 +174,7 @@
 
 
       <p>
-        This is a bar chart describing the amount of different attack types that happen in the United States. I was able to accomplish this by utilizing Mike Bostock's <a href="https://bl.ocks.org/mbostock/3885304">Bar Chart</a> example to follow.
+        This is a bar chart that shows the volume of stock moved between all the companies to see if the economy was good more volume would be moved if it was bad fewer volume would move <a href="https://bl.ocks.org/mbostock/3885304">Bar Chart</a> example to follow.
       </p>
     </section>
 
@@ -206,7 +205,7 @@
 
 
         d3.queue()
-          .defer(d3.csv, "US_Totals_TA.csv")
+          .defer(d3.csv, "data.csv")
           .await(ready);
 
         function ready(error, data) {
